@@ -64,6 +64,12 @@ header {
     margin-left: 40px;
 }
 
+.search-icon {
+    font-size: 24px;
+    background-color: rgb(255, 102, 0);
+    cursor: pointer;
+}
+/*botão pesqui*/
 #btnBusca {
     width: 30px;
     padding: 3px;
@@ -372,7 +378,11 @@ header {
 
 form {
     background-color: #fff;
+    width: 400px;
+    height: 300px;
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -491,4 +501,18 @@ button[type="submit"]:hover {
     margin-top: 66px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+.sort-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bar{
+    display: flex;
+    align-items: center;
+    width: 900px;
+    background-color: #9b9a9a;
 }

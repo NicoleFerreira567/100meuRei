@@ -12,6 +12,7 @@
           <link href="{{ asset('css/slick.css') }}" rel="stylesheet">
           <link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet">
           <link rel="stylesheet" href="{{ asset('css/estilo.css') }}">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 
 </head>
 
@@ -29,7 +30,7 @@
                     <img src="" alt="">
                     <div id="divBusca">
                         <input type="text" id="txtBusca" placeholder="Buscar...">
-                        <img src="{{ asset('img/lupa/search3.png') }}" id="btnBusca" alt="Buscar">
+                        <i class="fa fa-search" style="font-size: 24px; color: rgb(248, 244, 244);"></i>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -78,7 +79,7 @@
    </main>
 
 
-
+   <script src="{{ asset('js/precosdropdown.js') }}"></script>
    <script src="{{ asset('js/dropdown.js') }}"></script>
    <script src="{{ asset('js/carousel.js') }}"></script>
    <script src="{{ asset('js/slick.min.js') }}"></script>

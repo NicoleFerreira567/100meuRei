@@ -10,6 +10,7 @@ use App\Http\Controllers\limpezacontroller;
 use App\Http\Controllers\mateinfantiscontroller;
 use App\Http\Controllers\moveiscontroller;
 use App\Http\Controllers\papelariacontroller;
+use App\Http\Controllers\PrecoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,3 +38,6 @@ use Illuminate\Support\Facades\Route;
 
 /*Carrinho*/
  Route::post('/carrinho/adicionar', 'CarrinhoController@adicionar')->name('carrinho.adicionar');
+
+/* CONTROLE DE PREÇO*/
+ Route::get('/preco/{tipo}', [PrecoController::class, 'ordenar'])->name('preco.ordenar');
