@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+.body{
+    background-color: #d7d6d6;
+}
 .tpo1{
     display: flex;
     justify-content: first baseline;
@@ -6,7 +9,7 @@
 
 }
 header {
-    background-color: #0a3cdf;
+    background-color: #052ba7;
     color: #fff;
     padding: 10px 0;
 }
@@ -38,8 +41,10 @@ header {
 
 .nav-logo {
     font-size: 24px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #fff;
     text-decoration: none;
+    margin-right: 23px;
 }
 
 .nav-header-plus {
@@ -51,42 +56,62 @@ header {
     text-decoration: none;
 }
 
-#divBusca {
+/*pesquisar produtos*/
+#divBusca{
+    background-color:#f7f8f8;
+    border:solid 1px;
+    border-radius:15px;
+    width:400px;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+      font-family: "Nunito", sans-serif;
+    font-size:15px;
+    border:none;
+    height:32px;
+    width: 369px;
+  }
+/*termino */
+
+/*menu*/
+  .menu {
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 400px;
+    padding: 0;
     display: flex;
-    align-items: center;
-}
-
-#txtBusca {
-    padding: 8px;
-    width: 500px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-left: 40px;
-}
-
-.search-icon {
-    font-size: 24px;
-    background-color: rgb(255, 102, 0);
-    cursor: pointer;
-}
-/*botão pesqui*/
-#btnBusca {
-    width: 30px;
-    padding: 3px;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 0px;
-        background: none;
-    cursor: pointer;
 }
 
 
-    /* Estilo para ocultar o texto e exibir apenas a imagem */
-    .lista a, .carrinho a {
-        text-decoration: none; /* Remove o sublinhado do link */
-        display: inline-block; /* Permite definir largura e altura */
-    }
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    position: relative;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    color: #faf7f7;
+    font-size: 15px;
+   
+}
+a:after{
+  content: "";
+  position: absolute;
+  background-color: #ddd;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
 
     .lista a img, .carrinho a img {
         display: block; /* Mostra apenas a imagem */
@@ -126,24 +151,8 @@ header {
         border-radius: 5px;
         border: 1px solid #ccc;
     }
-.menu {
-    list-style-type: none;
-    margin-bottom: 0;
-    margin-left: 400px;
-    padding: 0;
-    display: flex;
-}
 
 
-.menu li {
-    margin-right: 20px;
-}
-
-.menu li a {
-    color: #faf7f7;
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: none;
-}
 
 
 .src_Title{
@@ -154,7 +163,7 @@ header {
 
 /* Dropdown Button */
 .dropbtn {
-    background-color:#0a3cdf;
+    background-color:#052ba7;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -217,6 +226,14 @@ header {
     height:283px;
 }
 
+.gradient {
+ 
+    width:100%; /* box quadrado */
+    height:200px;  /* box quadrado */
+    background-color: rgb(131, 131, 184);
+    background-image: linear-gradient( to bottom, red, green, yellow, blue );
+  }
+  
 .conteiners{
     display: block;
     align-items: center;
@@ -224,11 +241,25 @@ header {
     margin: 0 auto;
 }
 
+/*cards da página principal*/
+
+.card2{
+    width: 288px; 
+    height:400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card{
+    width: 200px; 
+    height:334px;
+    margin-left: 45px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 .manual{
   display: flex;
   margin-top: 34px;
   padding-bottom: 56px;
-  justify-content: space-around;
+  justify-content: center;
    background-color: rgb(255, 255, 255);
 
 }
@@ -238,25 +269,6 @@ header {
 }
 
 
-.card{
-
-    border-radius: 20px;
-    width: 234px;
-    height: 405px;
-    padding: 0px;
-    margin-right: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.btn {
-    border: none;
-    width: 289px;
-    height: 45px;
-    background: #f70a0a;
-    margin-top: 66px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
 
 
 .btn .add-to-cart-text {
@@ -265,33 +277,18 @@ header {
 .card-title {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
-    margin-left: 78px;
+    align-items: center;
+    margin-left: 10px;
 }
 
 .cardimagem img {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
 
-.card2{
 
-    border-radius: 20px;
-    width: 300px;
-    height: 405px;
-    padding: 0px;
-    margin-right: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.c{
-    border: 1px solid #181717;
-    border-radius:   2dvi;
-    padding:  70px;
-    border: 1px solid #181717;
-    width: calc(25% - 10px); /* Define a largura dos elementos (25% da largura do pai, menos a margem) */
-    margin-right: 10px; /* Adiciona espaço entre os elementos */
-}
 
 .element:last-child {
     margin-right: 0; /* Remove a margem do último elemento para evitar espaçamento extra */
@@ -334,14 +331,6 @@ header {
 
 }
 
-.card3{
-    border-radius: 20px;
-    width: 300px;
-    height: 405px;
-    padding: 0px;
-    margin-right: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
 .info{
     justify-content: center;
@@ -470,7 +459,7 @@ button[type="submit"]:hover {
 }
 
 
-/* cadastro */
+/* aqui são os card dos dos produtos */
 
 .produtos{
     display: block;
@@ -478,41 +467,79 @@ button[type="submit"]:hover {
     margin: 0 auto;
 }
 
-
-.card667{
-    border-radius: 1px;
+/* Defina a largura de cada coluna para ocupar 25% da largura total */
+.col-md-3 {
     width: 245px;
     height: 405px;
-    padding: 0px;
-    margin-right: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
-
-.col-md-3
-{
-    display: flex;
-    margin-top: 23px;
+    float: left; /* Garante que as colunas fiquem uma ao lado da outra */
+    box-sizing: border-box; /* Inclui a largura da borda e do preenchimento na largura total */
+    padding:  1px; /* Adiciona espaçamento horizontal entre as colunas */
 }
 
-.btn23{
+/* Limpeza de flutuação para evitar problemas de layout */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* CSS para centralizar o conteúdo dentro de cada contêiner */
+.card667 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Alinha o texto no centro */
+}
+
+/* Ajustes de estilo para a imagem */
+.cardimagem img {
+    max-width: 100%; /* Ajusta a imagem para não ultrapassar o contêiner */
+    height: auto;
+}
+.btn23 {
     border: none;
     width: 245px;
-    height: 45px;
+    height: 34px;
     background: #f70a0a;
     margin-top: 66px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+.card667{
+    border-radius: 1px;
+   
+    padding: 0px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
+
+
+
+
+/* sort*/
+.conteinerprod{
+    margin-left: auto;
+    margin-right: auto;
+     width: 1200px;
+}
 .sort-bar{
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
+ 
+.sort-bar h3{
+    color: #636060;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
 .bar{
     display: flex;
     align-items: center;
     width: 900px;
     background-color: #9b9a9a;
 }
+

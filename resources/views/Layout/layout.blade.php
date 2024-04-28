@@ -23,14 +23,14 @@
             <div class="navbar">
             <div class="nav-topo">
                 <div>
-                    <a class="nav-logo" href="#">Loja 100%</a>
+                    <a class="nav-logo" href="#"> 100% meu Rei</a>
                     </div>
                 </div>
                 <div>
                     <img src="" alt="">
                     <div id="divBusca">
                         <input type="text" id="txtBusca" placeholder="Buscar...">
-                        <i class="fa fa-search" style="font-size: 24px; color: rgb(248, 244, 244);"></i>
+                        <i class="fa fa-search" style="font-size: 24px; color: rgb(44, 42, 42);"></i>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -40,11 +40,6 @@
                       <a href="{{ url('/cadastro') }}">cadastrar</a>
                     </div>
                   </div>
-                  <div class="lista">
-                    <a href="#" title="Lista" id="nav-cart">
-                        <img src="{{ asset('img/lista/lista.png.png') }}" id="btnlist" alt="Listas">
-                    </a>
-                </div>
                 <div id="cart" class="cart">
                     <img src="{{ asset('img/carrinho/cart.png.png') }}" id="btncart" alt="Carrinho">
                     <span class="badge">0</span> <!-- Aqui será exibido o número de itens no carrinho -->
@@ -56,15 +51,14 @@
                 <div class="nav">
                     <div>
                         <ul class="menu">
-                            <li><a href="{{ url('/departamentos') }}">todos os departamentos</a></li>
-                            <li><a href="{{ url('/limpeza') }}"> limpeza</a></li>
-                            <li><a href="{{ url('/papelaria') }}">papelaria</a></li>
-                            <li><a href="{{ url('/moveis') }}">moveis</a></li>
-                            <li><a href="{{ url('/materiaisinfantis') }}">materiais infantis</a></li>
-                            <li><a href="{{ url('/autopecas') }}">auto peças</a></li>
-                            <li><a href="{{ url('/jardinagem') }}">jardinagem</a></li>
-                            <li><a href="{{ url('/ferramentas') }}">ferramentas</a></li>
-
+                            <li><a href="{{ url('/departamentos') }}" class="menu-item">todos os departamentos</a></li>
+                            <li><a href="{{ url('/limpeza') }}" class="menu-item">Limpeza</a></li>
+                            <li><a href="{{ url('/papelaria') }}" class="menu-item">Papelaria</a></li>
+                            <li><a href="{{ url('/moveis') }}" class="menu-item">Moveis</a></li>
+                            <li><a href="{{ url('/materiaisinfantis') }}" class="menu-item">Materiais infantis</a></li>
+                            <li><a href="{{ url('/autopecas') }}" class="menu-item">Auto peças</a></li>
+                            <li><a href="{{ url('/jardinagem') }}" class="menu-item">Jardinagem</a></li>
+                            <li><a href="{{ url('/ferramentas') }}" class="menu-item">ferramentas</a></li>
                         </ul>
                     </div>
                 </div>

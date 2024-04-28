@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    // Aqui você pode definir propriedades e métodos adicionais para o modelo Product
+    protected $fillable = [
+        'nome', 'imagem', 'preco',
+    ];
+
+    protected $casts = [
+        'preco' => 'float',
+    ];
 }

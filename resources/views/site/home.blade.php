@@ -19,16 +19,17 @@
                 <img src="{{ asset('img/produtos/bannerazul.png') }}" alt="loja 100%">
             </div>
         </div>
-
   <div class="conteiners">
 
         <div class="manual">
             <div class="card">
                 <div class="cardimagem">
-                    <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
+                    <img src="{{ asset('img/user/iconeuser.jpg') }}"   width="288" height="205" alt="">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">cadastre-se!</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nesciunt natus, illo corrupti quibusdam alias itaque quaerat. 
+                      </p>
 
                 </div>
             </div>
@@ -38,6 +39,8 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Informe sua localização</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nesciunt natus, illo corrupti quibusdam alias itaque quaerat. 
+                    </p>
 
                 </div>
             </div>
@@ -47,18 +50,11 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Formas de pagamento</h5>
-
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nesciunt natus, illo corrupti quibusdam alias itaque quaerat. 
+                    </p>
                 </div>
             </div>
-            <div class="card">
-                <div class="cardimagem">
-                    <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="288" height="205"lt="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title"> Menos de R$100</h5>
-
-                </div>
-            </div>
+       
         </div>
 
         <!--card 2 os mais vendidos-->
@@ -129,7 +125,7 @@
         <h2 class="src_Title">a gente acha que você vai gostar desses produtos </h2>
 
         <div class="e-100">
-            <div class="card3">
+            <div class="card2">
                 <div class="cardimagem">
                     <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
                 </div>
@@ -139,7 +135,7 @@
                     <button class="btn"><span class="add-to-cart-text">Adicionar ao Carrinho</span></button>
                 </div>
             </div>
-            <div class="card3">
+            <div class="card2">
                 <div class="cardimagem">
                     <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
                 </div>
@@ -149,7 +145,7 @@
                     <button class="btn"><span class="add-to-cart-text">Adicionar ao Carrinho</span></button>
                 </div>
             </div>
-            <div class="card3">
+            <div class="card2">
                 <div class="cardimagem">
                     <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
                 </div>
@@ -159,7 +155,7 @@
                     <button class="btn"><span class="add-to-cart-text">Adicionar ao Carrinho</span></button>
                 </div>
             </div>
-<div class="card3">
+<div class="card2">
     <div class="cardimagem">
         <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
     </div>

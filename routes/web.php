@@ -1,16 +1,10 @@
 <?php
 
-use App\Http\Controllers\autopecacontroller;
+use App\Http\Controllers\PrecoController;
 use App\Http\Controllers\cadastroController;
 use App\Http\Controllers\entrarcontroller;
-use App\Http\Controllers\ferramentascontroller;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\jardinagemcontroller;
-use App\Http\Controllers\limpezacontroller;
-use App\Http\Controllers\mateinfantiscontroller;
-use App\Http\Controllers\moveiscontroller;
-use App\Http\Controllers\papelariacontroller;
-use App\Http\Controllers\PrecoController;
+use App\Http\Controllers\ProdutoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,13 +22,13 @@ use Illuminate\Support\Facades\Route;
  Route::get('/', [homeController::class, 'index'])->name('home');
  Route::get('/entrar',[entrarcontroller::class,'index'])->name('entrar');
  Route::get('/cadastro',[cadastroController::class, 'index'])->name('cadastro');
- Route::get('/limpeza', [limpezacontroller::class, 'index'])->name('limpeza');
- Route::get('/papelaria', [papelariacontroller::class,'index'])->name('papelaria');
- Route::get('/moveis', [moveiscontroller::class, 'index'])->name('moveis');
- Route::get('/materiaisinfantis', [mateinfantiscontroller::class, 'index'])->name('materiasinfantis');
- Route::get('/autopecas', [autopecacontroller::class, 'index'])->name('autopeças');
- Route::get('/jardinagem', [jardinagemcontroller::class, 'index'])->name('jardinagem');
- Route::get('/ferramentas', [ferramentascontroller::class, 'index'])->name('ferramentas');
+ Route::get('/moveis', [ProdutoController::class, 'moveis'])->name('moveis');
+ Route::get('/limpeza', [ProdutoController::class, 'limpeza'])->name('limpeza');
+Route::get('/papelaria', [ProdutoController::class, 'papelaria'])->name('papelaria');
+Route::get('/materiaisinfantis', [ProdutoController::class, 'materiaisinfantis'])->name('materiaisinfantis');
+Route::get('/jardinagem', [ProdutoController::class, 'jardinagem'])->name('jardinagem');
+Route::get('/ferramentas', [ProdutoController::class, 'ferramentas'])->name('ferramentas');
+Route::get('/autopecas', [ProdutoController::class, 'autopecas'])->name('autopecas');
 
 /*Carrinho*/
  Route::post('/carrinho/adicionar', 'CarrinhoController@adicionar')->name('carrinho.adicionar');

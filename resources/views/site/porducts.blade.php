@@ -34,7 +34,7 @@
                 <a href="#">
                     <div class="card667">
                         <div class="cardimagem">
-                            <img src="{{ asset('img/produtos/imagemamarela.png') }}" width="245" height="205" alt="">
+                            <img src="{{ asset($produto->imagem) }}" width="245" height="205" alt="{{ $produto->nome }}">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">{{ $produto->nome }}</h5>
