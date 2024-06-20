@@ -8,6 +8,7 @@
 
 <body>
     <main>
+        <div class="cat-produtos">
         <div class="sort-bar">
             <div class="bar">
              <h3>Classificar por:</h3>
@@ -47,7 +48,7 @@
             @endforeach
         </div>
     </div>
-    
+      </div>
     </main>
 </body>
 

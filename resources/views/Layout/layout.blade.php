@@ -19,6 +19,7 @@
 <body>
 
         <header>
+
             <div class="cabeçalho">
             <div class="navbar">
             <div class="nav-topo">
@@ -36,7 +37,7 @@
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn">Entre ou cadastre-se</button>
                     <div id="myDropdown" class="dropdown-content">
-                      <a href="{{url('/entrar')  }}">entrar</a>
+                     <a href="{{ url('/login') }}">entrar</a>
                       <a href="{{ url('/cadastro') }}">cadastrar</a>
                     </div>
                   </div>
@@ -64,6 +65,7 @@
                 </div>
             </div>
         </div>
+       
         </header>
 
 
@@ -77,7 +79,7 @@
    <script src="{{ asset('js/dropdown.js') }}"></script>
    <script src="{{ asset('js/carousel.js') }}"></script>
    <script src="{{ asset('js/slick.min.js') }}"></script>
-   <script src="{{ asset('js/notifica.js') }}"></script>
+  <script src="{{ asset('js/notifica.js') }}"></script>
 </body>
 
 </html>

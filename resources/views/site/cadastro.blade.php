@@ -1,9 +1,9 @@
 
-@extends('layout.layout')
+@extends('layout.cadastro')
 
-@section('title', 'Inicio')
+@section('title', 'cadastro')
 
-@section('conteudo')
+
 
 
 

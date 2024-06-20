@@ -12,11 +12,13 @@
 
 <body>
 
+
+
     <main class="flex-container">
 
         <div class="banner">
             <div class="banner-content">
-                <img src="{{ asset('img/produtos/bannerazul.png') }}" alt="loja 100%">
+                <img src="{{ asset('img/banner/banner.png') }}" alt="loja 100%">
             </div>
         </div>
   <div class="conteiners">
@@ -28,83 +30,91 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">cadastre-se!</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nesciunt natus, illo corrupti quibusdam alias itaque quaerat. 
-                      </p>
-
+                    <p>Cadastre-se e esteja por dentro de tudo que nossa loja tem a oferecer.
+                    </p>
                 </div>
+
             </div>
             <div class="card">
                 <div class="cardimagem">
                     <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Informe sua localização</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nesciunt natus, illo corrupti quibusdam alias itaque quaerat. 
+                    <h5 class="card-title">Nosso aplicativo</h5>
+                    <p>Baixe o App e tenha suas compras na palma da mão.
                     </p>
-
                 </div>
+
             </div>
             <div class="card">
                 <div class="cardimagem">
-                    <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="288" height="205" alt="">
+                    <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="277" height="205" alt="">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Formas de pagamento</h5>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nesciunt natus, illo corrupti quibusdam alias itaque quaerat. 
+                  <p>Lorem ipsum dolor
+                    </p>
+                </div>
+            </div>
+
+             <div class="card">
+                <div class="cardimagem">
+                    <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="277" height="205" alt="">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Formas de pagamento</h5>
+                  <p>Lorem ipsum dolor
                     </p>
                 </div>
             </div>
        
         </div>
+   <!--card 3 os mais vendidos-->
+   <div class="r22">
+    <h2 class="src_Title">Para você</h2>
 
-        <!--card 2 os mais vendidos-->
-        <div class="blue-background">
-
-            <h2 class="src_Title">os mais vendidos para empresas!</h2>
-
-            <div class="e-100">
-                <div class="card2">
-                    <div class="cardimagem">
-                        <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Nome do Produto</h5>
-                        <span>R$22,99</span>
-                        <button class="btn"><span class="add-to-cart-text">Adicionar ao Carrinho</span></button>
-                    </div>
-                </div>
-                <div class="card2">
-                    <div class="cardimagem">
-                        <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Nome do Produto</h5>
-                        <span>R$22,99</span>
-                        <button class="btn"><span class="add-to-cart-text">Adicionar ao Carrinho</span></button>
-                    </div>
-                </div>
-                <div class="card2">
-                    <div class="cardimagem">
-                        <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Nome do Produto</h5>
-                        <span>R$22,99</span>
-                        <button class="btn"><span class="add-to-cart-text">Adicionar ao Carrinho</span></button>
-                    </div>
-                </div>
-    <div class="card2">
-        <div class="cardimagem">
-            <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
+    <div class="e-100">
+        <div class="card2">
+            <div class="cardimagem">
+                <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Nome do Produto</h5>
+                <span>R$22,99</span>
+            </div>
         </div>
-        <div class="card-body">
-            <h5 class="card-title">Nome do Produto</h5>
-            <span>R$22,99</span>
-            <button class="btn"><span class="add-to-cart-text">Adicionar ao Carrinho</span></button>
+        <div class="card2">
+            <div class="cardimagem">
+                <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Nome do Produto</h5>
+                <span>R$22,99</span>
+               
+            </div>
         </div>
-    </div>
+        <div class="card2">
+            <div class="cardimagem">
+                <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Nome do Produto</h5>
+                <span>R$22,99</span>
+               
+            </div>
+        </div>
+<div class="card2">
+<div class="cardimagem">
+    <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
 </div>
-  </div>
+<div class="card-body">
+    <h5 class="card-title">Nome do Produto</h5>
+    <span>R$22,99</span>
+</div>
+</div>
+</div>
+</div>
+
 
           <!--produtos fora de estoque-->
       <div class="r22">
@@ -122,7 +132,7 @@
     </div>
        <!--card 3 os mais vendidos-->
       <div class="r22">
-        <h2 class="src_Title">a gente acha que você vai gostar desses produtos </h2>
+        <h2 class="src_Title">em alta </h2>
 
         <div class="e-100">
             <div class="card2">
@@ -132,7 +142,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Nome do Produto</h5>
                     <span>R$22,99</span>
-                    <button class="btn"><span class="add-to-cart-text">Adicionar ao Carrinho</span></button>
+
                 </div>
             </div>
             <div class="card2">
@@ -142,7 +152,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Nome do Produto</h5>
                     <span>R$22,99</span>
-                    <button class="btn"><span class="add-to-cart-text">Adicionar ao Carrinho</span></button>
+                  
                 </div>
             </div>
             <div class="card2">
@@ -152,7 +162,6 @@
                 <div class="card-body">
                     <h5 class="card-title">Nome do Produto</h5>
                     <span>R$22,99</span>
-                    <button class="btn"><span class="add-to-cart-text">Adicionar ao Carrinho</span></button>
                 </div>
             </div>
 <div class="card2">
@@ -162,7 +171,6 @@
     <div class="card-body">
         <h5 class="card-title">Nome do Produto</h5>
         <span>R$22,99</span>
-        <button class="btn"><span class="add-to-cart-text">Adicionar ao Carrinho</span></button>
     </div>
 </div>
 </div>

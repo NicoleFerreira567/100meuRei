@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 .body{
-    background-color: #d7d6d6;
+    background-color: #b0a9a9;
 }
 .tpo1{
     display: flex;
@@ -155,11 +155,7 @@ a:hover:after{
 
 
 
-.src_Title{
-    margin-top: 23px;
-    color: #141516;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+
 
 /* Dropdown Button */
 .dropbtn {
@@ -226,14 +222,6 @@ a:hover:after{
     height:283px;
 }
 
-.gradient {
- 
-    width:100%; /* box quadrado */
-    height:200px;  /* box quadrado */
-    background-color: rgb(131, 131, 184);
-    background-image: linear-gradient( to bottom, red, green, yellow, blue );
-  }
-  
 .conteiners{
     display: block;
     align-items: center;
@@ -243,11 +231,8 @@ a:hover:after{
 
 /*cards da página principal*/
 
-.card2{
-    width: 288px; 
-    height:400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+
+/* card de do site vantagens */
 .card{
     width: 200px; 
     height:334px;
@@ -255,6 +240,8 @@ a:hover:after{
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+
 .manual{
   display: flex;
   margin-top: 34px;
@@ -294,14 +281,25 @@ a:hover:after{
     margin-right: 0; /* Remove a margem do último elemento para evitar espaçamento extra */
 }
 
-.blue-background{
-    display: block;
-    background-color: #ffffff;
-    justify-content: space-between;
+.src_Title{
+    margin-top: 23px;
+    color: #141516;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.card2{
+    width: 277px; 
+    height:400px;
+    background-color: #fffdfd;
+    margin-right: 23px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .e-100 {
     display: flex;
-    justify-content: space-between; /* Distribui os elementos uniformemente na linha */
+    background-color:#e7e2e2 ;
+    border-radius: 20px;
+    padding: 40px;
+   
 }
 
 .element {
@@ -320,16 +318,11 @@ a:hover:after{
 .r22{
     display: block;
     align-items: center;
+ 
     max-width: 1200px;
     margin: 0 auto;
  }
 
-.e-100{
-    display: flex;
-    justify-content: space-between; /* Distribui os elementos uniformemente na linha */
-     background-color: rgb(255, 255, 255);
-
-}
 
 
 .info{
@@ -344,13 +337,13 @@ a:hover:after{
     padding: 23px;
     justify-content: center;
     align-items: center;
-  background: #646c72;
+  background: #cecdcd;
 }
 
 .info22 img{
     width: 300px;
     height: 200px;
-    padding: 51px;
+    padding: 23px;
 }
 
 .fo099
@@ -479,6 +472,7 @@ button[type="submit"]:hover {
 /* Limpeza de flutuação para evitar problemas de layout */
 .row:after {
     content: "";
+    justify-content: center;
     display: table;
     clear: both;
 }
