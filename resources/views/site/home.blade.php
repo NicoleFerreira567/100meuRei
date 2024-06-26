@@ -4,25 +4,38 @@
 
 @section('conteudo')
 
-
-<link href="{{ asset('css/slick.css') }}" rel="stylesheet">
-<link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+          <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+          <link rel="stylesheet" href="{{ asset('css/estilo.css') }}">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 <link rel="stylesheet" href="{{ asset('css/estilo.css') }}">
 
 
 <body>
 
 
-
-    <main class="flex-container">
-
-        <div class="banner">
-            <div class="banner-content">
-                <img src="{{ asset('img/banner/banner.png') }}" alt="loja 100%">
-            </div>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="{{ asset('img/banner/banner.png') }}" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{{ asset('img/banner/banner.png') }}" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{{ asset('img/banner/banner.png') }}" alt="Third slide">
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
   <div class="conteiners">
-
         <div class="manual">
             <div class="card">
                 <div class="cardimagem">
@@ -184,5 +197,14 @@
   </div>
 
 </footer>
+
+<script src="{{ asset('js/bootstrap.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('js/jquery.min.js') }}"></script>
+<script src="{{ asset('js/precosdropdown.js') }}"></script>
+<script src="{{ asset('js/carousel.js') }}"></script>
+<script src="{{ asset('js/slick.min.js') }}"></script>
+<script src="{{ asset('js/notifica.js') }}"></script>
 </body>
 @endsection

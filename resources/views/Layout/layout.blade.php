@@ -11,75 +11,85 @@
 
           <link href="{{ asset('css/slick.css') }}" rel="stylesheet">
           <link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet">
+          <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+          <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
           <link rel="stylesheet" href="{{ asset('css/estilo.css') }}">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-
 </head>
 
 <body>
 
-        <header>
-
-            <div class="cabeçalho">
-            <div class="navbar">
-            <div class="nav-topo">
-                <div>
-                    <a class="nav-logo" href="#"> 100% meu Rei</a>
+    <header>
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="topo d-flex  align-items-center">
+                <!-- Navbar Logo -->
+                <a class="navbar-brand" href="#">100% meu Rei</a>
+                <!-- Search Section -->
+                <div class="d-flex align-items-center ">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="txtBusca" placeholder="Buscar...">
+                        <button class="btnpesquisa" type="button">
+                            <i class="fa fa-search" style="font-size: 24px; color: rgb(8, 5, 5);"></i>
+                        </button>
                     </div>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <div id="divBusca">
-                        <input type="text" id="txtBusca" placeholder="Buscar...">
-                        <i class="fa fa-search" style="font-size: 24px; color: rgb(44, 42, 42);"></i>
-                    </div>
+                <!-- Dropdown Section -->
+                <div class="dropdown ">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Entre ou cadastre-se
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="{{ url('/login') }}">Entrar</a></li>
+                        <li><a class="dropdown-item" href="{{ url('/cadastro') }}">Cadastrar</a></li>
+                    </ul>
                 </div>
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Entre ou cadastre-se</button>
-                    <div id="myDropdown" class="dropdown-content">
-                     <a href="{{ url('/login') }}">entrar</a>
-                      <a href="{{ url('/cadastro') }}">cadastrar</a>
-                    </div>
-                  </div>
-                <div id="cart" class="cart">
-                    <img src="{{ asset('img/carrinho/cart.png.png') }}" id="btncart" alt="Carrinho">
-                    <span class="badge">0</span> <!-- Aqui será exibido o número de itens no carrinho -->
-                </div>
-                <div id="notification" class="notification">
-                    <!-- Aqui será exibida a notificação -->
+                <!-- Carrinho Section -->
+                <div id="cart">
+                    <button class="btn btn-outline-primary position-relative" id="btncart">
+                        <img src="{{ asset('img/carrinho/cart.png') }}" alt="Carrinho" width="30">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                    </button>
                 </div>
             </div>
-                <div class="nav">
-                    <div>
-                        <ul class="menu">
-                            <li><a href="{{ url('/departamentos') }}" class="menu-item">todos os departamentos</a></li>
-                            <li><a href="{{ url('/limpeza') }}" class="menu-item">Limpeza</a></li>
-                            <li><a href="{{ url('/papelaria') }}" class="menu-item">Papelaria</a></li>
-                            <li><a href="{{ url('/moveis') }}" class="menu-item">Moveis</a></li>
-                            <li><a href="{{ url('/materiaisinfantis') }}" class="menu-item">Materiais infantis</a></li>
-                            <li><a href="{{ url('/autopecas') }}" class="menu-item">Auto peças</a></li>
-                            <li><a href="{{ url('/jardinagem') }}" class="menu-item">Jardinagem</a></li>
-                            <li><a href="{{ url('/ferramentas') }}" class="menu-item">ferramentas</a></li>
-                        </ul>
-                    </div>
+        </nav>
+    
+    </header>
+
+        <!-- Navbar Links -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/limpeza') }}">Limpeza</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/papelaria') }}">Papelaria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/moveis') }}">Moveis</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/materiaisinfantis') }}">Materiais infantis</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/autopecas') }}">Auto peças</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/jardinagem') }}">Jardinagem</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/ferramentas') }}">Ferramentas</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-       
-        </header>
-
-
+        </nav>
+   
 
    <main>
     @yield('conteudo')
    </main>
 
-
+  <!-- Bootstrap Bundle with Popper.js -->
+   <script src="{{ asset('js/bootstrap.js') }}"></script>
+   <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+   <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+   <script src="{{ asset('js/jquery.min.js') }}"></script>
    <script src="{{ asset('js/precosdropdown.js') }}"></script>
-   <script src="{{ asset('js/dropdown.js') }}"></script>
    <script src="{{ asset('js/carousel.js') }}"></script>
    <script src="{{ asset('js/slick.min.js') }}"></script>
   <script src="{{ asset('js/notifica.js') }}"></script>
+  
 </body>
 
 </html>
