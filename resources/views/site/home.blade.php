@@ -42,6 +42,7 @@
     </a>
 </div>
   <div class="conteiners">
+    <h2>Os mais vendidos</h2>
         <div class="manual">
             <div class="card">
                 <div class="cardimagem">
@@ -90,6 +91,7 @@
         </div>
    <!--card 3 os mais vendidos-->
    <div class="manual">
+    <h2>Os mais buscados</h2>
     <div class="card">
         <div class="cardimagem">
             <img src="{{ asset('img/produtos/imagemamarela.png') }}"    width="288" height="205" alt="">
@@ -153,6 +155,7 @@
     </div>
        <!--card 3 os mais vendidos-->
        <div class="manual">
+        <h2> Para você!</h2>
         <div class="card">
             <div class="cardimagem">
                 <img src="{{ asset('img/produtos/imagemamarela.png') }}"    width="288" height="205" alt="">

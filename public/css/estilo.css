@@ -202,7 +202,9 @@ header {
 
 }
 
-
+.bntpesquisa{
+    background-color: #b0a9a9;
+}
 
 
 .btn .add-to-cart-text {
@@ -294,7 +296,7 @@ header {
     margin-top: 45px;
     width: 1200x;
     height: 200px;
-    background: #173494;
+    background: #282930;
 }
 
 /* cadastro */

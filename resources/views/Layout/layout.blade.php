@@ -31,13 +31,13 @@
                     <div class="input-group">
                         <input type="text" class="form-control" id="txtBusca" placeholder="Buscar...">
                         <button class="btnpesquisa" type="button">
-                            <i class="fa fa-search" style="font-size: 24px; "></i>
+                            <i class="fa fa-search" style="font-size: 24px; color: rgb(41, 38, 38);"></i>
                         </button>
                     </div>
                 </div>
                 <!-- Dropdown Section -->
                 <div class="dropdown ">
-                    <button class="btn " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                         Entre ou cadastre-se
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
