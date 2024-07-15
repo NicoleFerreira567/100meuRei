@@ -38,9 +38,6 @@ Route::get('/login', [loginController::class, 'index'])->name('login');
 Route::post('/login', [loginController::class, 'autenticar'])->name('login');
 //Esta rota é responsável pela autenticação.
 
-Route::middleware(['autenticacao:clientes'])->group(function (){
-    Route::get('/',[Cliente::class, 'index'])->name('home');
-});
 
 
 Route::middleware(['autenticacao:admin'])->group(function (){
