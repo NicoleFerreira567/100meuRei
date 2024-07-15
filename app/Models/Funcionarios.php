@@ -15,18 +15,18 @@ class Funcionarios extends Model
 
     protected $fillable = [
         'nomeFuncionario',
-        'dataNascimento',
+        'dataNascFuncionario',
         'foneFuncionario',
         'enderecoFuncionario',
         'cidadeFuncionario',
         'estadoFuncionario',
         'cepFuncionario',
-        'dataContratação',
-        'cargo',
-        'salario',
+        'dataContrataçãoFuncionario',
+        'cargoFuncionario',
+        'salarioFuncionario',
         'tipofuncionario',
         'statusFuncionario',
-        'statusAluno'
+      
     ];
     
     public function tipo_usuario() {

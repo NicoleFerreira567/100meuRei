@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Http\\Controllers\\AdministrativoController' => $baseDir . '/app/Http/Controllers/AdministrativoController.php',
     'App\\Http\\Controllers\\Cliente' => $baseDir . '/app/Http/Controllers/Cliente.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\FormController' => $baseDir . '/app/Http/Controllers/FormController.php',
@@ -17,6 +18,7 @@ return array(
     'App\\Http\\Controllers\\homeController' => $baseDir . '/app/Http/Controllers/homeController.php',
     'App\\Http\\Controllers\\loginController' => $baseDir . '/app/Http/Controllers/loginController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
+    'App\\Http\\Middleware\\AutLojaMiddle' => $baseDir . '/app/Http/Middleware/AutLojaMiddle.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
     'App\\Http\\Middleware\\LogAcessoLoja' => $baseDir . '/app/Http/Middleware/LogAcessoLoja.php',
@@ -27,7 +29,6 @@ return array(
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\ValidateSignature' => $baseDir . '/app/Http/Middleware/ValidateSignature.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
-    'App\\Models\\Admin' => $baseDir . '/app/Models/Admin.php',
     'App\\Models\\Cliente' => $baseDir . '/app/Models/Cliente.php',
     'App\\Models\\Funcionarios' => $baseDir . '/app/Models/Funcionarios.php',
     'App\\Models\\LogAcesso' => $baseDir . '/app/Models/LogAcesso.php',

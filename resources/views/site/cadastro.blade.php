@@ -1,8 +1,4 @@
 
-
-
-
-
 <body>
     <h2>cadastro</h2>
     <form action="/enviar" method="POST">

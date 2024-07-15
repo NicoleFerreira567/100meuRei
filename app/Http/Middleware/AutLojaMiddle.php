@@ -56,4 +56,4 @@ class AutLojaMiddle
         // Se não houver email na sessão ou ocorrerem outras condições, o acesso é negado
         return redirect()->route('login')->withErrors(['email' => 'Não autenticado']);
     }
-    }
+}

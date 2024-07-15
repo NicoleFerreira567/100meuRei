@@ -10,6 +10,7 @@ use App\Http\Controllers\ProdutoController;
 use App\Http\Middleware\AutLojaMiddle;
 use App\Models\Cliente as ModelsCliente;
 use Illuminate\Support\Facades\Route;
+use Spatie\FlareClient\Http\Client;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,12 +39,26 @@ Route::post('/login', [loginController::class, 'autenticar'])->name('login');
 //Esta rota é responsável pela autenticação.
 
 Route::middleware(['autenticacao:clientes'])->group(function (){
-    Route::get('/dashboard/alunos',[Cliente::class, 'index'])->name('dashboard.alunos');
+    Route::get('/',[Cliente::class, 'index'])->name('home');
 });
+
 
 Route::middleware(['autenticacao:admin'])->group(function (){
     Route::get('/dashboard/administrativo',[ AdministrativoController::class, 'index'])->name('dashboard.administrativo');
 });
+
+Route::middleware(['autenticacao:admin'])->group(function (){
+    Route::get('/dashboard/administrativo',[ AdministrativoController::class, 'index'])->name('dashboard.administrativo');
+ //Rotas para o CRUD de funcionario
+    Route::get('/dashboard/administrativo/funcionario', [AdministrativoController::class, 'indexFunc'])->name('admin.func.index');
+    Route::get('/dashboard/administrativo/funcionario/create', [AdministrativoController::class, 'createfuncionario'])->name('admin.func.create');
+    Route::post('/dashboard/administrativo/funcionario', [AdministrativoController::class, 'cadfuncionario'])->name('admin.func.cad');
+    Route::get('/dashboard/administrativo/funcionario/{id}/edit', [AdministrativoController::class, 'editfuncionario'])->name('admin.func.edit');
+    Route::put('/dashboard/administrativo/funcionario/{id}', [AdministrativoController::class, 'updatefuncionario'])->name('admin.func.update');
+    Route::put('/dashboard/administrativo/funcionario/{id}/desativar', [AdministrativoController::class, 'desativarfuncinario'])->name('admin.func.desativar');
+});
+
+
 
 //cadastro
 Route::get('/cadastro',[cadastroController::class, 'index'])->name('cadastro');

@@ -14,32 +14,38 @@
 <body>
 
 
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="{{ asset('img/banner/banner.png') }}" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="{{ asset('img/banner/banner.png') }}" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="{{ asset('img/banner/banner.png') }}" alt="Third slide">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+ <!--banner principal-->
+ <div id="carouselProdutos" class="carousel slide carousel-dark" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="{{asset('img/produtos/imagemamarela.png')}} alt="First slide">
       </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="{{ asset('')}} alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="{{ asset('img/banner/banner.png') }} alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
   <div class="conteiners">
         <div class="manual">
             <div class="card">
                 <div class="cardimagem">
-                    <img src="{{ asset('img/user/iconeuser.jpg') }}"   width="288" height="205" alt="">
+                    <img src="{{ asset('img/produtos/imagemamarela.png') }}"    width="288" height="205" alt="">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">cadastre-se!</h5>
@@ -83,49 +89,51 @@
        
         </div>
    <!--card 3 os mais vendidos-->
-   <div class="r22">
-    <h2 class="src_Title">Para você</h2>
+   <div class="manual">
+    <div class="card">
+        <div class="cardimagem">
+            <img src="{{ asset('img/produtos/imagemamarela.png') }}"    width="288" height="205" alt="">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">cadastre-se!</h5>
+            <p>Cadastre-se e esteja por dentro de tudo que nossa loja tem a oferecer.
+            </p>
+        </div>
 
-    <div class="e-100">
-        <div class="card2">
-            <div class="cardimagem">
-                <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Nome do Produto</h5>
-                <span>R$22,99</span>
-            </div>
+    </div>
+    <div class="card">
+        <div class="cardimagem">
+            <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
         </div>
-        <div class="card2">
-            <div class="cardimagem">
-                <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Nome do Produto</h5>
-                <span>R$22,99</span>
-               
-            </div>
+        <div class="card-body">
+            <h5 class="card-title">Nosso aplicativo</h5>
+            <p>Baixe o App e tenha suas compras na palma da mão.
+            </p>
         </div>
-        <div class="card2">
-            <div class="cardimagem">
-                <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Nome do Produto</h5>
-                <span>R$22,99</span>
-               
-            </div>
+
+    </div>
+    <div class="card">
+        <div class="cardimagem">
+            <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="277" height="205" alt="">
         </div>
-<div class="card2">
-<div class="cardimagem">
-    <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
-</div>
-<div class="card-body">
-    <h5 class="card-title">Nome do Produto</h5>
-    <span>R$22,99</span>
-</div>
-</div>
-</div>
+        <div class="card-body">
+            <h5 class="card-title">Formas de pagamento</h5>
+          <p>Lorem ipsum dolor
+            </p>
+        </div>
+    </div>
+
+     <div class="card">
+        <div class="cardimagem">
+            <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="277" height="205" alt="">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Formas de pagamento</h5>
+          <p>Lorem ipsum dolor
+            </p>
+        </div>
+    </div>
+
 </div>
 
 
@@ -144,51 +152,52 @@
 
     </div>
        <!--card 3 os mais vendidos-->
-      <div class="r22">
-        <h2 class="src_Title">em alta </h2>
+       <div class="manual">
+        <div class="card">
+            <div class="cardimagem">
+                <img src="{{ asset('img/produtos/imagemamarela.png') }}"    width="288" height="205" alt="">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">cadastre-se!</h5>
+                <p>Cadastre-se e esteja por dentro de tudo que nossa loja tem a oferecer.
+                </p>
+            </div>
 
-        <div class="e-100">
-            <div class="card2">
-                <div class="cardimagem">
-                    <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Nome do Produto</h5>
-                    <span>R$22,99</span>
+        </div>
+        <div class="card">
+            <div class="cardimagem">
+                <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Nosso aplicativo</h5>
+                <p>Baixe o App e tenha suas compras na palma da mão.
+                </p>
+            </div>
 
-                </div>
+        </div>
+        <div class="card">
+            <div class="cardimagem">
+                <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="277" height="205" alt="">
             </div>
-            <div class="card2">
-                <div class="cardimagem">
-                    <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Nome do Produto</h5>
-                    <span>R$22,99</span>
-                  
-                </div>
+            <div class="card-body">
+                <h5 class="card-title">Formas de pagamento</h5>
+              <p>Lorem ipsum dolor
+                </p>
             </div>
-            <div class="card2">
-                <div class="cardimagem">
-                    <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Nome do Produto</h5>
-                    <span>R$22,99</span>
-                </div>
+        </div>
+
+         <div class="card">
+            <div class="cardimagem">
+                <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="277" height="205" alt="">
             </div>
-<div class="card2">
-    <div class="cardimagem">
-        <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Formas de pagamento</h5>
+              <p>Lorem ipsum dolor
+                </p>
+            </div>
+        </div>
+   
     </div>
-    <div class="card-body">
-        <h5 class="card-title">Nome do Produto</h5>
-        <span>R$22,99</span>
-    </div>
-</div>
-</div>
-</div>
-
     </main>
 <footer>
   <div class="fo099">

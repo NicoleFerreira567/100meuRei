@@ -9,13 +9,16 @@ use Illuminate\Http\Request;
 class Cliente extends Controller
 {
     public function index(){
+
         $idCliente = session('id');
+
         $cliente = ModelsCliente::find($idCliente);
 
         if (!$cliente){
             abort(404, 'Cliente não encontrado');
         }
-
+        dd($cliente);
+        
         //return view('dashboard.alunos.index', compact('aluno'));
     }
 }
