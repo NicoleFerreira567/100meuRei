@@ -7,40 +7,40 @@
 <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
           <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
           <link rel="stylesheet" href="{{ asset('css/estilo.css') }}">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('css/estilo.css') }}">
 
 
 <body>
 
 
- <!--banner principal-->
- <div id="carouselProdutos" class="carousel slide carousel-dark" data-ride="carousel">
+   <!--banner principal-->
+   <div id="carouselProdutos" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselProdutos" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselProdutos" data-slide-to="1"></li>
+        <li data-target="#carouselProdutos" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="{{asset('img/produtos/imagemamarela.png')}} alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="{{ asset('')}} alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="{{ asset('img/banner/banner.png') }} alt="Third slide">
-      </div>
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="{{ asset('img/produtos/imagemamarela.png') }}" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="{{ asset('img/produtos/imagemamarela.png') }}" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="{{ asset('img/produtos/imagemamarela.png') }}" alt="Third slide">
+        </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+    <a class="carousel-control-prev" href="#carouselProdutos" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+    <a class="carousel-control-next" href="#carouselProdutos" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
     </a>
-  </div>
+</div>
   <div class="conteiners">
         <div class="manual">
             <div class="card">
@@ -207,6 +207,10 @@
 
 </footer>
 
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="{{ asset('js/bootstrap.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>

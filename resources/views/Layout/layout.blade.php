@@ -22,7 +22,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-dark bg-primary">
+        <nav class="navbar">
             <div class="topo d-flex  align-items-center">
                 <!-- Navbar Logo -->
                 <a class="navbar-brand" href="#">100% meu Rei</a>
@@ -31,13 +31,13 @@
                     <div class="input-group">
                         <input type="text" class="form-control" id="txtBusca" placeholder="Buscar...">
                         <button class="btnpesquisa" type="button">
-                            <i class="fa fa-search" style="font-size: 24px; color: rgb(8, 5, 5);"></i>
+                            <i class="fa fa-search" style="font-size: 24px; "></i>
                         </button>
                     </div>
                 </div>
                 <!-- Dropdown Section -->
                 <div class="dropdown ">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                         Entre ou cadastre-se
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">

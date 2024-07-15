@@ -18,6 +18,10 @@ header {
     justify-content: center;
     align-items: center;
 }
+ 
+.navbar {
+   background-color: #052ba7;
+}
 
 
 .nav-logo {
@@ -25,6 +29,10 @@ header {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #fff;
     text-decoration: none;
+}
+
+.dropdown{
+    background-color: #052ba7;
 }
 
 .nav-header-plus a {
@@ -43,6 +51,12 @@ header {
     height:40px;
     width: 369px;
   }
+
+ #dropdownMenuButton{
+    background-color: #052ba7;
+ }
+
+
 
     .lista a img, .carrinho a img {
         display: block; /* Mostra apenas a imagem */
@@ -144,13 +158,16 @@ header {
  .carousel {
     justify-content: center;
 }
- /* Garantir que o carousel tenha o tamanho desejado */
-        .carousel-item img {
-            width: 1160px;
-            height: 283px;
-            object-fit: cover; /* Garante que a imagem preencha o contêiner */
-        }
-       
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+}
 
 .conteiners{
     display: block;
@@ -204,6 +221,7 @@ header {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
+
 
 
 
