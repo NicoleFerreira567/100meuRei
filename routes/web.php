@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdministrativoController;
 use App\Http\Controllers\PrecoController;
 use App\Http\Controllers\Cliente;
@@ -41,20 +42,19 @@ Route::post('/login', [loginController::class, 'autenticar'])->name('login');
 
 
 Route::middleware(['autenticacao:admin'])->group(function (){
-    Route::get('/dashboard/administrativo',[ AdministrativoController::class, 'index'])->name('dashboard.administrativo');
+    Route::get('/dashboard/admin', [AdminController::class, 'administrativo'])->name('dashboard.admin.index');
+    Route::get('/dashboard/admin/funcionario', [AdminController::class, 'indexFunc'])->name('admin.func.index');
+;
+
 });
 
-Route::middleware(['autenticacao:admin'])->group(function (){
-    Route::get('/dashboard/administrativo',[ AdministrativoController::class, 'index'])->name('dashboard.administrativo');
- //Rotas para o CRUD de funcionario
-    Route::get('/dashboard/administrativo/funcionario', [AdministrativoController::class, 'indexFunc'])->name('admin.func.index');
-    Route::get('/dashboard/administrativo/funcionario/create', [AdministrativoController::class, 'createfuncionario'])->name('admin.func.create');
-    Route::post('/dashboard/administrativo/funcionario', [AdministrativoController::class, 'cadfuncionario'])->name('admin.func.cad');
-    Route::get('/dashboard/administrativo/funcionario/{id}/edit', [AdministrativoController::class, 'editfuncionario'])->name('admin.func.edit');
-    Route::put('/dashboard/administrativo/funcionario/{id}', [AdministrativoController::class, 'updatefuncionario'])->name('admin.func.update');
-    Route::put('/dashboard/administrativo/funcionario/{id}/desativar', [AdministrativoController::class, 'desativarfuncinario'])->name('admin.func.desativar');
-});
 
+//SAIR
+Route::get('/sair', function(){
+    session()->flush();
+    return redirect('/');
+
+})->name('sair');
 
 
 //cadastro
@@ -62,3 +62,5 @@ Route::get('/cadastro',[cadastroController::class, 'index'])->name('cadastro');
 
 /* CONTROLE DE PREÇO*/
  Route::get('/preco/{tipo}', [PrecoController::class, 'ordenar'])->name('preco.ordenar');
+
+

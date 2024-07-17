@@ -23,13 +23,13 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="{{ asset('img/produtos/imagemamarela.png') }}" alt="First slide">
+            <img class="d-block w-100 custom-carousel-img" src="{{ asset('img/produtos/imagemamarela.png') }}" alt="First slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="{{ asset('img/produtos/imagemamarela.png') }}" alt="Second slide">
+            <img class="d-block w-100 custom-carousel-img" src="{{ asset('img/produtos/imagemamarela.png') }}" alt="Second slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="{{ asset('img/produtos/imagemamarela.png') }}" alt="Third slide">
+            <img class="d-block w-100 custom-carousel-img" src="{{ asset('img/produtos/imagemamarela.png') }}" alt="Third slide">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselProdutos" role="button" data-slide="prev">
@@ -46,7 +46,7 @@
         <div class="manual">
             <div class="card">
                 <div class="cardimagem">
-                    <img src="{{ asset('img/produtos/imagemamarela.png') }}"    width="288" height="205" alt="">
+                    <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="288" height="205" alt="">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">cadastre-se!</h5>

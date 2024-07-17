@@ -94,19 +94,19 @@
         <div class="header">
             <h2>Login</h2>
         </div>
-        <form action="/login" method="POST">
+        <form class="form" action="{{ route('login') }}" method="POST">
             @csrf
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu email">
-                <!-- Exemplo de mensagem de erro -->
+                <input type="email" name="email" class=" form-control"
+                    placeholder="informe seu e-mail:" value="{{ old('email') }} " id="emailUsuario">
+                    {{ $errors->has('email') ? $errors ->first ('email') : '' }}
                 <!-- <small>Erro: Email inválido</small> -->
             </div>
             <div class="form-group">
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" class="form-control" placeholder="Digite sua senha">
-                <!-- Exemplo de mensagem de erro -->
-                <!-- <small>Erro: Campo obrigatório</small> -->
+                <input type="password" name="password"  class="passord form-control"
+                placeholder="Informe sua senha:" value="{{ old('password') }}" id="senhaUsuario">
+                {{ $errors->has('password') ? $errors ->first ('password') : '' }}
             </div>
             <button type="submit" class="btn-submit">Entrar</button>
         </form>

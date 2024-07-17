@@ -158,11 +158,15 @@ header {
  .carousel {
     justify-content: center;
 }
-
-.carousel-item img {
-    max-height: 500px;
-    object-fit: cover;
+.custom-carousel-img {
+    width: 125px;
+    height: 313px;
+    object-fit: cover; /* This ensures the image covers the dimensions without distortion */
 }
+
+
+
+
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
     background-color: black;

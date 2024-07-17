@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Funcionarios extends Model
+class Funcionario extends Model
 {
     use HasFactory;
 
-    protected $table = 'funcionarios';
+    protected $table = 'funcionario';
 
     protected $primaryKey = 'idFuncionario';
 
@@ -24,7 +24,7 @@ class Funcionarios extends Model
         'dataContrataçãoFuncionario',
         'cargoFuncionario',
         'salarioFuncionario',
-        'tipofuncionario',
+        'tipo_funcionario',
         'statusFuncionario',
       
     ];

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('nomeUsuario', 255);
             $table->string('emailUsuario', 255);
             $table->string('senhaUsuario', 255);
-            $table->enum('tipo_usuario_type', ['admin', 'cliente', 'gestores']); // Exemplo de tipos válidos
+            $table->enum('tipo_usuario_type',['cliente', 'funcionario']); 
             $table->unsignedBigInteger('tipo_usuario_id'); // Removi o tamanho 255
             $table->timestamp('emailVerificado')->nullable();
             $table->string('tokenLembrete', 100);

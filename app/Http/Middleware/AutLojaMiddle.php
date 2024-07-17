@@ -4,8 +4,8 @@ namespace App\Http\Middleware;
 
 use Closure;
 use App\Models\Usuario;
-use App\Models\Funcionarios;
 use App\Models\Cliente;
+use App\Models\Funcionario;
 use Illuminate\Http\Request;
 
 class AutLojaMiddle
@@ -17,37 +17,35 @@ class AutLojaMiddle
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle(Request $request, Closure  $next, $tipoUser)
+    public function handle(Request $request, Closure $next, $tipoUser)
     {
         $email = session('email');
 
-        if($email) {
+        if ($email) {
             // Verifica se há um email na sessão
-
             $usuario = Usuario::where('emailUsuario', $email)->first();
 
-            if(!$usuario) {
+            if (!$usuario) {
                 return redirect()->route('login')->withErrors(['email' => 'Não autenticado']);
             }
             // Obtém o usuário associado ao email da sessão
-
             $tipoUsuario = $usuario->tipo_usuario;
 
-            if($tipoUsuario) {
+            if ($tipoUsuario) {
                 $tipo = null;
 
-                if($tipoUsuario instanceof Cliente) {
+                if ($tipoUsuario instanceof Cliente) {
                     $tipo = 'cliente';
-                } elseif ($tipoUsuario instanceof Funcionarios) {
+                } elseif ($tipoUsuario instanceof Funcionario) {
                     $tipo = $tipoUsuario->tipo_funcionario;
                 }
-                // Verifica o tipo de usuário (Aluno ou Funcionário)
+                // Verifica o tipo de usuário (Cliente ou Funcionário)
 
-                if($tipo === $tipoUser) {
+                if ($tipo === $tipoUser) {
                     return $next($request);
                     // Se o tipo de usuário da sessão é igual ao tipo exigido, permite o acesso
                 } else {
-                    return redirect()->route('login')->withErrors(['Email' => 'Não autenticado']);
+                    return redirect()->route('login')->withErrors(['email' => 'Acesso não autorizado']);
                     // Se o tipo de usuário não corresponde ao exigido, redireciona para a página de login com erro
                 }
             }
@@ -57,3 +55,4 @@ class AutLojaMiddle
         return redirect()->route('login')->withErrors(['email' => 'Não autenticado']);
     }
 }
+

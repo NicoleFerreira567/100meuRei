@@ -14,7 +14,7 @@ return new class extends Migration
          */
         public function up()
     {
-        Schema::create('clientes', function (Blueprint $table) {
+        Schema::create('cliente', function (Blueprint $table) {
             $table->id('idCliente'); // Define 'idCliente' como a chave primária
             $table->string('nomeCliente');
             $table->string('telefoneCliente')->nullable();
@@ -28,8 +28,7 @@ return new class extends Migration
     
         public function down()
         {
-            Schema::dropIfExists('clientes');
+            Schema::dropIfExists('cliente');
         }
     
 };
-

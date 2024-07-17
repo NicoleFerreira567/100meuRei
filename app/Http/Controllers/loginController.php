@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Funcionarios;
 use App\Models\Usuario;
+use App\Models\Funcionario;
 use App\Models\Cliente;
 use Illuminate\Http\Request;
 
@@ -41,14 +41,18 @@ class loginController extends Controller
             return back()->withErrors(['password' => 'Senha incorreta.']);
         }
 
-        $tipoUsuario = $usuario->tipo_usuario;
 
-         dd($tipoUsuario);
+        
+        //dd($usuario);
+
+        $tipoUsuario = $usuario->tipo_usuario;
+           
+           //dd($tipoUsuario);
 
         session([
             'email' => $usuario->emailUsuario,
         ]);
-
+        
         if ($tipoUsuario instanceof Cliente) {
             session([
                 'id'           => $tipoUsuario->idCliente,
@@ -56,28 +60,22 @@ class loginController extends Controller
                 'email'        => $usuario->emailUsuario,
                 'tipo_usuario' => 'cliente',
             ]);
-
-        } elseif ($tipoUsuario instanceof Funcionarios) {
-
-                  //dd($tipoUsuario);
+            return redirect()->route('pagina.cliente');
+        
+        } elseif ($tipoUsuario instanceof Funcionario) {
+            session([
+                'id'              => $tipoUsuario->idFuncionario,
+                'nome'            => $tipoUsuario->nomeFuncionario,
+                'tipoFuncionario' => $tipoUsuario->tipo_funcionario,
+            ]);
+        
             if ($tipoUsuario->tipo_funcionario == 'admin') {
-                session([
-                    'id'              => $tipoUsuario->idFuncionario,
-                    'nome'            => $tipoUsuario->nomeFuncionario,
-                    'tipoFuncionario' => $tipoUsuario->tipo_funcionario,
-                ]);
-                return redirect()->route('dashboard.administrativo');
-            } else {
-                session([
-                    'id'              => $tipoUsuario->idFuncionario,
-                    'nome'            => $tipoUsuario->nomeFuncionario,
-                    'tipoFuncionario' => $tipoUsuario->tipo_funcionario,
-                ]);
-            
+                return redirect()->route('dashboard.admin.index');
             }
         }
+        
+        // Se nenhum tipo de usuário válido for encontrado, redirecionar para a página de login com erro
+        return redirect()->route('login')->withErrors(['email' => 'Usuário não autenticado']);
 
-        return back()->withErrors(['email' => 'Erro desconhecido de autenticação']);
-    }
 }
-
+}

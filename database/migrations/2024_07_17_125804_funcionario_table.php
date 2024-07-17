@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('funcionarios', function (Blueprint $table) {
+        Schema::create('funcionario', function (Blueprint $table) {
             $table->bigIncrements('idFuncionario'); // Alterando o nome do ID para idFuncionario
             $table->string('nomeFuncionario', 255);
             $table->date('dataNascFuncionario');
@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('cidadeFuncionario', 100);
             $table->string('estadoFuncionario', 50);
             $table->string('cepFuncionario', 10);
-            $table->timestamp('dataContrataçãoFuncionario');
+            $table->timestamp('dataContratacaoFuncionario');
             $table->string('cargoFuncionario', 100);
             $table->decimal('salarioFuncionario', 10, 2);
             $table->enum('tipo_funcionario', ['admin', 'gestores']);
@@ -38,6 +38,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('funcionarios');
+        Schema::dropIfExists('funcionario');
     }
 };
+

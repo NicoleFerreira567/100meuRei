@@ -533,7 +533,7 @@ class ComposerStaticInitfe33f98a750b8c5a51b30c78bd3fab21
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
-        'App\\Http\\Controllers\\AdministrativoController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdministrativoController.php',
+        'App\\Http\\Controllers\\AdminController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminController.php',
         'App\\Http\\Controllers\\Cliente' => __DIR__ . '/../..' . '/app/Http/Controllers/Cliente.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\FormController' => __DIR__ . '/../..' . '/app/Http/Controllers/FormController.php',
@@ -555,7 +555,7 @@ class ComposerStaticInitfe33f98a750b8c5a51b30c78bd3fab21
         'App\\Http\\Middleware\\ValidateSignature' => __DIR__ . '/../..' . '/app/Http/Middleware/ValidateSignature.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Models\\Cliente' => __DIR__ . '/../..' . '/app/Models/Cliente.php',
-        'App\\Models\\Funcionarios' => __DIR__ . '/../..' . '/app/Models/Funcionarios.php',
+        'App\\Models\\Funcionario' => __DIR__ . '/../..' . '/app/Models/Funcionario.php',
         'App\\Models\\LogAcesso' => __DIR__ . '/../..' . '/app/Models/LogAcesso.php',
         'App\\Models\\Product' => __DIR__ . '/../..' . '/app/Models/Product.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',

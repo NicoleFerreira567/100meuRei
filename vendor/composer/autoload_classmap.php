@@ -8,7 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
-    'App\\Http\\Controllers\\AdministrativoController' => $baseDir . '/app/Http/Controllers/AdministrativoController.php',
+    'App\\Http\\Controllers\\AdminController' => $baseDir . '/app/Http/Controllers/AdminController.php',
     'App\\Http\\Controllers\\Cliente' => $baseDir . '/app/Http/Controllers/Cliente.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\FormController' => $baseDir . '/app/Http/Controllers/FormController.php',
@@ -30,7 +30,7 @@ return array(
     'App\\Http\\Middleware\\ValidateSignature' => $baseDir . '/app/Http/Middleware/ValidateSignature.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Models\\Cliente' => $baseDir . '/app/Models/Cliente.php',
-    'App\\Models\\Funcionarios' => $baseDir . '/app/Models/Funcionarios.php',
+    'App\\Models\\Funcionario' => $baseDir . '/app/Models/Funcionario.php',
     'App\\Models\\LogAcesso' => $baseDir . '/app/Models/LogAcesso.php',
     'App\\Models\\Product' => $baseDir . '/app/Models/Product.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',

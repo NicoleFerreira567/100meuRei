@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
         Relation::morphMap([
          'cliente'   => 'App\Models\Cliente',
          /*Muito importante para conseguir chegar nas classes */
-         'funcionario' => 'App\Models\Funcionarios',
+         'funcionario' => 'App\Models\Funcionario',
         ]);
     }
 }
