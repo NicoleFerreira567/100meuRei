@@ -1,6 +1,3 @@
-@extends('dashboard.layout-dash.layout')
-@section('title', 'Dashboard')
-@section('conteudo')
 
 
 
@@ -11,7 +8,7 @@
 
             <a href="" class="botao">Lista de ativos</a>
 
-            <a href="{{ route('dashboard.admin.funcionario.create') }}" class="botao">Novo funcionario</a>
+            <a href="{{route('admin.func.index') }}"class="botao">Novo funcionario</a>
 
         </div>
 
@@ -32,7 +29,7 @@
                 </thead>
 
                 <tbody>
-                    @foreach ($listaFuncionario as $ $funcionario)
+                    @foreach ($listaFunc as $ $funcionario)
                         <tr>
                             <th scope="row">{{ $ $funcionario->id }}</th>
                             <td>{{ $funcionario->nomeFuncionario }}</td>
@@ -62,7 +59,6 @@
 </div>
 
 
-<a href="{{ ('sair') }}" class="btn btn-danger">SAIR</a>
 
-</div>
-@endsection
+
+

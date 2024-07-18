@@ -44,6 +44,11 @@ Route::post('/login', [loginController::class, 'autenticar'])->name('login');
 Route::middleware(['autenticacao:admin'])->group(function (){
     Route::get('/dashboard/admin', [AdminController::class, 'administrativo'])->name('dashboard.admin.index');
     Route::get('/dashboard/admin/funcionario', [AdminController::class, 'indexFunc'])->name('admin.func.index');
+    Route::get('/dashboard/administrativo/funcionario/create', [AdminController::class, 'createfuncionario'])->name('admin.func.create');
+    Route::post('/dashboard/administrativo/funcionario', [AdminController::class, 'cadfuncionario'])->name('admin.func.cad');
+    Route::get('/dashboard/administrativo/funcionario/{id}/edit', [AdminController::class, 'editfuncionario'])->name('admin.func.edit');
+    Route::put('/dashboard/administrativo/funcionario/{id}', [AdminController::class, 'updatefuncionario'])->name('admin.func.update');
+    Route::put('/dashboard/administrativo/funcionario/{id}/desativar', [AdminController::class, 'desativarfuncinario'])->name('admin.func.desativar');
 ;
 
 });
