@@ -8,9 +8,6 @@
     <title>@yield('title')</title>
 
           <meta name="csrf-token" content="{{ csrf_token() }}">
-
-          <link href="{{ asset('css/slick.css') }}" rel="stylesheet">
-          <link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet">
           <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
           <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ asset('css/estilo.css') }}">          
@@ -25,7 +22,7 @@
         <nav class="navbar">
             <div class="topo d-flex  align-items-center">
                 <!-- Navbar Logo -->
-                <a class="navbar-brand" href="#">100% meu Rei</a>
+              <img src="{{ asset('img/logo/1.png') }}" alt="logotipo">
                 <!-- Search Section -->
                 <div class="d-flex align-items-center ">
                     <div class="input-group">
@@ -37,7 +34,7 @@
                 </div>
                 <!-- Dropdown Section -->
                 <div class="dropdown ">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                         Entre ou cadastre-se
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -47,9 +44,9 @@
                 </div>
                 <!-- Carrinho Section -->
                 <div id="cart">
-                    <button class="btn btn-outline-primary position-relative" id="btncart">
-                        <img src="{{ asset('img/carrinho/cart.png') }}" alt="Carrinho" width="30">
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                    <button class="btn  position-relative" id="btncart">
+                        <ion-icon name="cart-sharp" alt="Carrinho" width="50"></ion-icon>
+                        <span class="position-absolute top-0 start-100 translate-middle badge  bg-danger">0</span>
                     </button>
                 </div>
             </div>
@@ -82,6 +79,8 @@
     @yield('conteudo')
    </main>
 
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <!-- Bootstrap Bundle with Popper.js -->
    <script src="{{ asset('js/bootstrap.js') }}"></script>
    <script src="{{ asset('js/bootstrap.min.js') }}"></script>

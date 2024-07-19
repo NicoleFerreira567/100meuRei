@@ -11,61 +11,42 @@ class AdminController extends Controller
     {
         $idFuncionario = session('id');
 
-        // Verificando se há um ID de funcionário na sessão
         if (!$idFuncionario) {
             return redirect()->route('login')->withErrors(['email' => 'Não autenticado']);
         }
 
-        // Buscando o funcionário pelo ID no banco de dados
         $funcionario = Funcionario::find($idFuncionario);
 
-        // Verificando se o funcionário foi encontrado
         if (!$funcionario) {
-            // Se o funcionário não for encontrado, redireciona para uma página de erro
             abort(404, 'Funcionário não encontrado');
         }
 
-        // Passando o objeto $funcionario para a view
         return view('dashboard.admin.index', compact('funcionario'));
     }
 
-
-    
-
-    // MOSTRAR OS FUNCIONARIOS ATIVOS
     public function indexFunc()
     {
         $idFuncionario = session('id');
-
         $funcionario = Funcionario::find($idFuncionario);
-
         $listaFunc = Funcionario::all();
-
-        //dd($funcionario);
 
         return view('dashboard.admin.funcionario.index', compact('funcionario', 'listaFunc'));
     }
 
-
-    // CRIAR FUNCIONARIO NOVO
     public function createFunc(Request $request)
     {
         $idFuncionario = session('id');
-
         $funcionario = Funcionario::find($idFuncionario);
 
         if (!$funcionario) {
-            abort(404, 'Funcionario nao encontrado');
+            abort(404, 'Funcionário não encontrado');
         }
+        
         return view('dashboard.admin.funcionario.create', compact('funcionario'));
-
     }
 
-    // CADASTRAR FUNCIONARIO NOVO
     public function cadFunc(Request $request)
     {
-
-
         $request->validate([
             'nomeFuncionario' => 'required|string|max:100',
             'emailFuncionario' => 'required|string|max:100',
@@ -80,37 +61,18 @@ class AdminController extends Controller
             'salarioFuncionario' => 'required|string|max:100',
             'tipoFuncionario' => 'required|string|max:100',
             'statusFuncionario' => 'required|string|max:20',
-            'criadoEm' => 'required|date',
-            'atualizadoEm' => 'required|date',
         ]);
 
         $funcionario = new Funcionario();
-
-        $funcionario->nomeFuncionario = $request->input('nomeFuncionario');
-        $funcionario->emailFuncionario = $request->input('emailFuncionario');
-        $funcionario->dataNascFuncionario = $request->input('dataNascFuncionario');
-        $funcionario->telefoneFuncionario = $request->input('telefoneFuncionario');
-        $funcionario->enderecoFuncionario = $request->input('enderecoFuncionario');
-        $funcionario->cidadeFuncionario = $request->input('cidadeFuncionario');
-        $funcionario->estadoFuncionario = $request->input('estadoFuncionario');
-        $funcionario->cepFuncionario = $request->input('cepFuncionario');
-        $funcionario->dataContratoFuncionario = $request->input('dataContratoFuncionario');
-        $funcionario->cargoFuncionario = $request->input('cargoFuncionario');
-        $funcionario->salarioFuncionario = $request->input('salarioFuncionario');
-        $funcionario->tipoFuncionario = $request->input('tipoFuncionario');
-        $funcionario->statusFuncionario = $request->input('statusFuncionario');
-        $funcionario->criadoEm = $request->input('criadoEm');
-        $funcionario->atualizadoEm = $request->input('atualizadoEm');
-
+        $funcionario->fill($request->all());
         $funcionario->save();
 
-        return redirect()->route('dashboard.admin.funcionarios.index')->with('sucess', 'Aluno cadrastado com sucesso');
+        return redirect()->route('dashboard.admin.func.index')->with('success', 'Funcionário cadastrado com sucesso');
     }
 
-
-    // EDITAR/ATUALIZAR FUNCIONARIO
     public function editFunc($id)
-    {
+    {    
+        $funcionario = Funcionario::find($id);
         $funcionario = Funcionario::findOrFail($id);
         return view('dashboard.admin.funcionario.edit', compact('funcionario'));
     }
@@ -118,26 +80,22 @@ class AdminController extends Controller
     public function updateFunc(Request $request, $id)
     {
         $request->validate([
-            'nomeFuncionario' => 'required',
-            'emailFuncionario' => 'required|email',
-            'cargoFuncionario' => 'required',
+            'nomeFuncionario' => 'required|string|max:100',
+            'emailFuncionario' => 'required|string|max:100|email',
+            'cargoFuncionario' => 'required|string|max:50',
         ]);
 
         $funcionario = Funcionario::findOrFail($id);
-        $funcionario->nomeFuncionario = $request->input('nomeFuncionario');
-        $funcionario->emailFuncionario = $request->input('emailFuncionario');
-        $funcionario->cargoFuncionario = $request->input('cargoFuncionario');
+        $funcionario->fill($request->all());
         $funcionario->save();
 
-        return redirect()->route('dashboard.admin.funcionarios.index')->with('success', 'Funcionário atualizado com sucesso.');
+        return redirect()->route('dashboard.admin.func.index')->with('success', 'Funcionário atualizado com sucesso.');
     }
 
-
-    // DESATIVAR FUNCIONARIO
     public function desativarFunc($id)
     {
         $funcionario = Funcionario::findOrFail($id);
-        $funcionario->statusFuncionario = 'inativo'; // Define o status como 'inativo' para desativar o funcionário
+        $funcionario->statusFuncionario = 'inativo';
         $funcionario->save();
 
         return redirect()->route('dashboard.admin.func.index')->with('success', 'Funcionário desativado com sucesso.');

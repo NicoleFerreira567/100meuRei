@@ -26,13 +26,14 @@ use Spatie\FlareClient\Http\Client;
 
 
  Route::get('/', [homeController::class, 'index'])->name('home');
- Route::get('/moveis', [ProdutoController::class, 'moveis'])->name('moveis');
- Route::get('/limpeza', [ProdutoController::class, 'limpeza'])->name('limpeza');
-Route::get('/papelaria', [ProdutoController::class, 'papelaria'])->name('papelaria');
-Route::get('/materiaisinfantis', [ProdutoController::class, 'materiaisinfantis'])->name('materiaisinfantis');
-Route::get('/jardinagem', [ProdutoController::class, 'jardinagem'])->name('jardinagem');
-Route::get('/ferramentas', [ProdutoController::class, 'ferramentas'])->name('ferramentas');
-Route::get('/autopecas', [ProdutoController::class, 'autopecas'])->name('autopecas');
+ Route::get('/produtos', [ProdutoController::class, 'index']);
+ Route::get('/produtos/moveis', [ProdutoController::class, 'moveis']);
+ Route::get('/produtos/limpeza', [ProdutoController::class, 'limpeza']);
+ Route::get('/produtos/autopecas', [ProdutoController::class, 'autopecas']);
+ Route::get('/produtos/ferramentas', [ProdutoController::class, 'ferramentas']);
+ Route::get('/produtos/jardinagem', [ProdutoController::class, 'jardinagem']);
+ Route::get('/produtos/papelaria', [ProdutoController::class, 'papelaria']);
+ Route::get('/produtos/materiaisinfantis', [ProdutoController::class, 'materiaisinfantis']);
  
 
 Route::get('/login', [loginController::class, 'index'])->name('login');
@@ -46,11 +47,9 @@ Route::middleware(['autenticacao:admin'])->group(function (){
     Route::get('/dashboard/admin/funcionario', [AdminController::class, 'indexFunc'])->name('admin.func.index');
     Route::get('/dashboard/administrativo/funcionario/create', [AdminController::class, 'createfuncionario'])->name('admin.func.create');
     Route::post('/dashboard/administrativo/funcionario', [AdminController::class, 'cadfuncionario'])->name('admin.func.cad');
-    Route::get('/dashboard/administrativo/funcionario/{id}/edit', [AdminController::class, 'editfuncionario'])->name('admin.func.edit');
-    Route::put('/dashboard/administrativo/funcionario/{id}', [AdminController::class, 'updatefuncionario'])->name('admin.func.update');
-    Route::put('/dashboard/administrativo/funcionario/{id}/desativar', [AdminController::class, 'desativarfuncinario'])->name('admin.func.desativar');
-;
-
+    Route::get('/dashboard/administrativo/funcionario/{id}/edit', [AdminController::class, 'editfuncionario'])->name('dashboard.admin.func.edit');
+    Route::put('/dashboard/administrativo/funcionario/{id}', [AdminController::class, 'updatefuncionario'])->name('dashboard.admin.func.update');
+    Route::put('/dashboard/administrativo/funcionario/{id}/desativar', [AdminController::class, 'desativarfuncinario'])->name('dashboard.admin.func.desativar');
 });
 
 

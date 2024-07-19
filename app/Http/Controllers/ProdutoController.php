@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class ProdutoController extends Controller
 {
+
+    public function index()
+    {
+        $products = Product::all();
+        return response()->json($products);
+    }
     public function moveis()
     {
         $produtos = Product::where('categoria', 'moveis')->get();

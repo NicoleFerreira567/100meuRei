@@ -8,7 +8,7 @@
           <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
           <link rel="stylesheet" href="{{ asset('css/estilo.css') }}">
           <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="{{ asset('css/estilo.css') }}">
+          <link rel="stylesheet" href="{{ asset('css/estilo.css') }}">
 
 
 <body>
@@ -41,104 +41,311 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-  <div class="conteiners">
-    <h2>Os mais vendidos</h2>
-        <div class="manual">
+ 
+<div class="carousel-container">
+    <h3> Os mais vendidos</h3>
+    <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="cards-wrapper">
             <div class="card">
-                <div class="cardimagem">
-                    <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="288" height="205" alt="">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+                <p class="card-price">$29.99</p>
+                <div class="card-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">cadastre-se!</h5>
-                    <p>Cadastre-se e esteja por dentro de tudo que nossa loja tem a oferecer.
-                    </p>
-                </div>
-
-            </div>
-            <div class="card">
-                <div class="cardimagem">
-                    <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Nosso aplicativo</h5>
-                    <p>Baixe o App e tenha suas compras na palma da mão.
-                    </p>
-                </div>
-
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">comprar</a>
+              </div>
             </div>
             <div class="card">
-                <div class="cardimagem">
-                    <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="277" height="205" alt="">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+                <p class="card-price">$29.99</p>
+                <div class="card-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Formas de pagamento</h5>
-                  <p>Lorem ipsum dolor
-                    </p>
-                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">comprar</a>
+              </div>
             </div>
-
-             <div class="card">
-                <div class="cardimagem">
-                    <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="277" height="205" alt="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Formas de pagamento</h5>
-                  <p>Lorem ipsum dolor
-                    </p>
-                </div>
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+              <p class="card-price">$29.99</p>
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">comprar</a>
+              </div>
             </div>
-       
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+                <p class="card-price">$29.99</p>
+                <div class="card-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">comprar</a>
+              </div>
+            </div>
+          </div>
         </div>
-   <!--card 3 os mais vendidos-->
-   <div class="manual">
-    <h2>Os mais buscados</h2>
-    <div class="card">
-        <div class="cardimagem">
-            <img src="{{ asset('img/produtos/imagemamarela.png') }}"    width="288" height="205" alt="">
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+              <p class="card-price">$29.99</p>
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">comprar</a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+                <p class="card-price">$29.99</p>
+                <div class="card-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">comprar</a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+                <p class="card-price">$29.99</p>
+                <div class="card-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">comprar</a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+                <p class="card-price">$29.99</p>
+                <div class="card-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">comprar</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card-body">
-            <h5 class="card-title">cadastre-se!</h5>
-            <p>Cadastre-se e esteja por dentro de tudo que nossa loja tem a oferecer.
-            </p>
-        </div>
-
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <div class="card">
-        <div class="cardimagem">
-            <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
+  </div>
+  
+  <div class="carousel-container">
+    <h3> Os mais procurados</h3>
+    <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="cards-wrapper">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+              <p class="card-price">$29.99</p>
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">comprar</a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+                <p class="card-price">$29.99</p>
+                <div class="card-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">comprar</a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+              <p class="card-price">$29.99</p>
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">comprar</a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+              <p class="card-price">$29.99</p>
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">comprar</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card-body">
-            <h5 class="card-title">Nosso aplicativo</h5>
-            <p>Baixe o App e tenha suas compras na palma da mão.
-            </p>
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+              <p class="card-price">$29.99</p>
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+                <p class="card-price">$29.99</p>
+                <div class="card-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+                <p class="card-price">$29.99</p>
+                <div class="card-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+              <p class="card-price">$29.99</p>
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
         </div>
-
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <div class="card">
-        <div class="cardimagem">
-            <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="277" height="205" alt="">
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Formas de pagamento</h5>
-          <p>Lorem ipsum dolor
-            </p>
-        </div>
-    </div>
-
-     <div class="card">
-        <div class="cardimagem">
-            <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="277" height="205" alt="">
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Formas de pagamento</h5>
-          <p>Lorem ipsum dolor
-            </p>
-        </div>
-    </div>
-
-</div>
-
-
+  </div>
+  
           <!--produtos fora de estoque-->
       <div class="r22">
       <div class="info">
@@ -150,64 +357,166 @@
             <p>este produto esta fora de estoque </p>
          </div>
       </div>
-
-
     </div>
-       <!--card 3 os mais vendidos-->
-       <div class="manual">
-        <h2> Para você!</h2>
-        <div class="card">
-            <div class="cardimagem">
-                <img src="{{ asset('img/produtos/imagemamarela.png') }}"    width="288" height="205" alt="">
+     
+    <div class="carousel-container">
+        <h3>Para você</h3>
+        <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+                <div class="card">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card Title 1</h5>
+              <p class="card-price">$29.99</p>
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">comprar</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card Title 1</h5>
+                    <p class="card-price">$29.99</p>
+                    <div class="card-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">comprar</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    < <h5 class="card-title">Card Title 1</h5>
+                    <p class="card-price">$29.99</p>
+                    <div class="card-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">comprar</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card Title 1</h5>
+              <p class="card-price">$29.99</p>
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">comprar</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="card-body">
-                <h5 class="card-title">cadastre-se!</h5>
-                <p>Cadastre-se e esteja por dentro de tudo que nossa loja tem a oferecer.
-                </p>
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card Title 1</h5>
+              <p class="card-price">$29.99</p>
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">comprar</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card Title 1</h5>
+                    <p class="card-price">$29.99</p>
+                    <div class="card-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">comprar</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card Title 1</h5>
+                    <p class="card-price">$29.99</p>
+                    <div class="card-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">comprar</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card Title 1</h5>
+                    <p class="card-price">$29.99</p>
+                    <div class="card-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">comprar</a>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    
 
-        </div>
-        <div class="card">
-            <div class="cardimagem">
-                <img src="{{ asset('img/produtos/imagemamarela.png') }}"   width="288" height="205" alt="">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Nosso aplicativo</h5>
-                <p>Baixe o App e tenha suas compras na palma da mão.
-                </p>
-            </div>
-
-        </div>
-        <div class="card">
-            <div class="cardimagem">
-                <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="277" height="205" alt="">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Formas de pagamento</h5>
-              <p>Lorem ipsum dolor
-                </p>
-            </div>
-        </div>
-
-         <div class="card">
-            <div class="cardimagem">
-                <img src="{{ asset('img/produtos/imagemamarela.png') }}"  width="277" height="205" alt="">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Formas de pagamento</h5>
-              <p>Lorem ipsum dolor
-                </p>
-            </div>
-        </div>
    
-    </div>
-    </main>
 <footer>
   <div class="fo099">
 
-
   </div>
-
 </footer>
 
 
